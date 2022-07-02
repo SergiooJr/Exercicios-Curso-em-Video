@@ -464,3 +464,177 @@ else:
 # else:
 #     print("Opção inválida!")
 
+# exercicio 045                             SEM PLACAR
+# from random import randint
+# from time import sleep
+
+# print('''Suas opções:
+# [0] PEDRA
+# [1] PAPEL
+# [2] TESOURA''')
+# escolha = int(input("Qual é sua jogada? "))
+
+# if escolha != 0 and escolha != 1 and escolha != 2:
+#     print("Opção inválida! Tente novamente :)")
+# else:
+#     print("JO")
+#     sleep(1)
+#     print("KEN")
+#     sleep(1)
+#     print("PO!!!")
+#     print("-="*20)
+
+#     itens = ("Pedra", "Papel", "Tesoura")
+#     computador = randint(0,2)
+#     escolhaComput = itens[computador]
+#     escolhaJog = itens[escolha]
+
+#     print("O computador escolheu {}".format(escolhaComput))
+#     print("O jogador escolheu {}".format(escolhaJog))
+#     print("-="*20)
+
+#     if escolhaComput != escolhaJog:
+#         if escolhaComput == "Pedra" and escolhaJog == "Papel" or escolhaComput == "Papel" and escolhaJog == "Tesoura" or escolhaComput == "Tesoura" and escolhaJog == "Pedra":
+#             print("Jogador venceu!")
+#         #                           OU
+#         # elif escolhaComput == "Papel" and escolhaJog == "Tesoura":
+#         #     print("Jogador venceu!")
+#         # elif escolhaComput == "Tesoura" and escolhaJog == "Pedra":
+#         #     print("Jogador venceu!")
+#         else:
+#             print("Computador venceu!")
+#     else:
+#         print("EMPATOU!")
+
+# exercicio 045                             COM PLACAR
+# from distutils.command.clean import clean
+# from random import randint
+# from time import sleep
+# import os
+
+# placarComp = 0
+# placarJog = 0
+# verifica = 0
+# verifica2 = 0
+
+# while verifica2 == 0:
+#     verifica = 0
+#     os.system("cls")
+#     print('''Suas opções:
+#     [0] PEDRA
+#     [1] PAPEL
+#     [2] TESOURA''')
+#     escolha = int(input("Qual é sua jogada? "))
+
+#     if escolha != 0 and escolha != 1 and escolha != 2:
+#         print("Opção inválida! Tente novamente :)")
+#         sleep(3)
+#         os.system("cls")
+#     else:
+#         print("JO")
+#         sleep(1)
+#         print("KEN")
+#         sleep(1)
+#         print("PO!!!")
+#         print("-="*20)
+
+#         itens = ("Pedra", "Papel", "Tesoura")
+#         computador = randint(0,2)
+#         escolhaComput = itens[computador]
+#         escolhaJog = itens[escolha]
+
+#         print("O computador escolheu {}".format(escolhaComput))
+#         print("O jogador escolheu {}".format(escolhaJog))
+#         print("-="*20)
+
+#         if escolhaComput != escolhaJog:
+#             if escolhaComput == "Pedra" and escolhaJog == "Papel" or escolhaComput == "Papel" and escolhaJog == "Tesoura" or escolhaComput == "Tesoura" and escolhaJog == "Pedra":
+#                 print("Jogador venceu!")
+#                 placarJog = placarJog + 1
+#                 print("Placar atualizado: {} (jogador) a {} (computador)".format(placarJog, placarComp))
+#                 sleep(3)
+#                 os.system("cls")
+#                 if placarJog == 3:
+#                     print("O GRANDE CAMPEÃO É O JOGADOR!")
+#                     while verifica == 0:
+#                         recomecar = str(input("Deseja recomeçar? (s/n) ").lower().strip())
+#                         if recomecar == "s":
+#                             print("Tudo bem, recomeçando...")
+#                             sleep(0.5)
+#                             print(".")
+#                             sleep(0.5)
+#                             print("..")
+#                             sleep(0.5)
+#                             print("...")
+#                             sleep(1)
+#                             placarComp = 0
+#                             placarJog = 0
+#                             verifica = 1
+#                             verifica2 = 0
+#                             os.system("cls")
+#                         elif recomecar == "n":
+#                             verifica = 1
+#                             print("Tudo bem, até a próxima :)")
+#                             sleep(1)
+#                             verifica2 = 1
+#                             os.system("cls")
+#                         else:
+#                             print("Opção inválida, apenas s/n!")
+#                             sleep(3)
+#                             verifica = 0
+#                             os.system("cls")
+#             else:
+#                 print("Computador venceu!")
+#                 placarComp = placarComp + 1
+#                 print("Placar atualizado: {} (jogador) a {} (computador)".format(placarJog, placarComp))
+#                 sleep(3)
+#                 os.system("cls")
+#                 if placarComp == 3:
+#                     print("O GRANDE CAMPEÃO É O COMPUTADOR!\n")
+#                     sleep(1)
+#                     while verifica == 0:
+#                         recomecar = str(input("Deseja recomeçar? (s/n) ").lower().strip())
+#                         if recomecar == "s":
+#                             print("Tudo bem, recomeçando...")
+#                             sleep(0.5)
+#                             print(".")
+#                             sleep(0.5)
+#                             print("..")
+#                             sleep(0.5)
+#                             print("...")
+#                             sleep(1)
+#                             placarComp = 0
+#                             placarJog = 0
+#                             verifica = 1
+#                             verifica2 = 0
+#                             os.system("cls")
+#                         elif recomecar == "n":
+#                             verifica = 1
+#                             print("Tudo bem, até a próxima :)")
+#                             sleep(1)
+#                             verifica2 = 1
+#                             os.system("cls")
+#                         else:
+#                             print("Opção inválida, apenas s/n!")
+#                             sleep(3)
+#                             verifica = 0
+#                             os.system("cls")
+#         else:
+#             print("EMPATOU!")
+#             print("Placar atualizado: {} (jogador) a {} (computador)".format(placarJog, placarComp))
+#             sleep(3)
+#             os.system("cls")
+#                           COM EMOJIS :)
+# import random
+# import emoji
+# from time import sleep
+# emoj=[emoji.emojize(':victory_hand:'), emoji.emojize(':raised_hand:'), emoji.emojize(':raised_fist:')]
+# maquina=random.choice(emoj)
+# print('PEDRA')
+# sleep(1)
+# print('PAPEL')
+# sleep(1)
+# print('TESOURA...')
+# sleep(1)
+# print(maquina)
+
