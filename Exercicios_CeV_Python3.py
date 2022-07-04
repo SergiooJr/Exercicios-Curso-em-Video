@@ -650,3 +650,12 @@ else:
 #     sleep(1)
 
 # exercicio 047
+# import os
+
+# os.system("cls")
+# contador = 0
+# for i in range(1, 51):
+#     par = i%2
+#     if par == 0:
+#         contador = contador + 1
+# print("Dê 1 à 50 existem {} números pares".format(contador))
