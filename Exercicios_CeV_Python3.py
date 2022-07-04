@@ -3,6 +3,7 @@ import time
 import datetime
 import math
 import random
+os.system("cls")
 
 # exercicio 003
 
@@ -709,6 +710,18 @@ else:
 
 # exercicio 051
 
+# print("\033[33m="*20)
+# print("\033[32m10 TERMOS DE UMA PA")
+# print("\033[33m="*20,"\n")
+# print("\033[m")
+# pTermo = int(input("Primeiro termo: "))
+# razao = int(input("Razão: "))
+# decimo = pTermo + (10-1) * razao
+# for i in range(pTermo, decimo, razao):
+#     print(i, end=" → ");
+# print("\033[31mACABOU")
+# print("\033[m")
+
 # exercicio 052
 
 # os.system("cls")
@@ -728,6 +741,24 @@ else:
 
 # exercicio 053
 
+# os.system("cls")
+# frase = str(input("Digite uma frase: ")).strip().lower()
+# palavras = frase.split()
+# junto = "".join(palavras)
+# inverso = ""
+
+# for letra in range(len(junto) -1, -1, -1):
+#     inverso += junto[letra]
+# if junto == inverso:
+#     print("Temos um palíndromo")
+# else:
+#     print("Não temos um palíndromo")
+#                   OU
+# frase = input("Qual a frase? ").upper().replace(" ", "")
+# if frase == frase[::-1]:
+#     print("A frase é um palíndromo")
+# else:
+#     print("A frase não é um palíndromo")
 # exercicio 054
 
 # os.system("cls")
@@ -760,10 +791,32 @@ else:
 
 # exercicio 056
 
-os.system("cls")
-for i in range(1, 5):
-    print("----{}ª PESSOA-----".format(i))
-    nome = str(input("Nome: ")).strip()
-    idade = int(input("Idade: "))
-    sexo = str(input("Sexo [M/F]: ")).strip().lower()
-    print("")
+# os.system("cls")
+# cont = 0
+# maior = 0
+# contIdade = 0
+# somaIdade = 0
+
+# for i in range(1, 5):
+#     print("----{}ª PESSOA-----".format(i))
+#     nome = str(input("Nome: ")).strip()
+#     idade = int(input("Idade: "))
+#     sexo = str(input("Sexo [M/F]: ")).strip().lower()
+#     print("")
+#     somaIdade += idade
+#     if sexo == "m":
+#         cont += 1
+#         if cont == 1:
+#             maior = idade
+#             nomeMais = nome
+#         else:
+#             if maior < idade:
+#                 maior = idade
+#                 nomeMais = nome
+#     else:
+#         if idade < 20:
+#             contIdade += 1
+# media = float(somaIdade/4)
+# print("A média de idade do grupo é de {:.1f} anos".format(media))
+# print("O homem mais velho tem {} anos e se chama {}".format(maior, nomeMais))
+# print("Ao todo são {} mulheres com menos de 20 anos".format(contIdade))
