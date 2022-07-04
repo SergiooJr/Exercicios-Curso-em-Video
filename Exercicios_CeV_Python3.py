@@ -1,3 +1,9 @@
+import os
+import time
+import datetime
+import math
+import random
+
 # exercicio 003
 
 # num1 = int(input("Digite o primeiro número: "))
@@ -657,5 +663,107 @@ else:
 # for i in range(1, 51):
 #     par = i%2
 #     if par == 0:
-#         contador = contador + 1
-# print("Dê 1 à 50 existem {} números pares".format(contador))
+#         print(i)
+#                                       OU
+# os.system("cls")
+# for i in range(2, 51, 2):
+#     print(i)
+
+# exercicio #048
+# import os
+
+# os.system("cls")
+# contador = 0
+# for i in range(1, 501):
+#     impar = i%2
+#     multiplo3 = i%3
+#     if impar == 1 and multiplo3 == 0:
+#         contador += i
+# print("{} números entre 1 e 500 são ímpares e multiplos de 3".format(contador))
+#                                   OU
+# os.system("cls")
+# contador = 0
+# for i in range(1, 501, 2):
+#     multiplo3 = i%3
+#     if multiplo3 == 0:
+#         contador += i
+# print("{} números entre 1 e 500 são ímpares e multiplos de 3".format(contador))
+
+# exercicio 049
+# import os
+
+# os.system("cls")
+# num = int(input("Digite um número para ver a tabuada: "))
+# for i in range (1, 11):
+#     print ("{} X {:2} = {}".format(num, i, (num*i)))
+
+# exercicio 050
+
+# os.system("cls")
+# soma = 0
+# for i in range (1, 7):
+#     num = int(input("Digite um número inteiro: "))
+#     if num%2 == 0:
+#         soma += num
+# print("A soma dos números pares digitados é de {}".format(soma))
+
+# exercicio 051
+
+# exercicio 052
+
+# os.system("cls")
+# qnt = 0
+# num = int(input("Digite um valor: "))
+# for i in range(1, num+1):
+#     if num % i == 0:
+#         print("\033[34m", end="")
+#         qnt += 1
+#     else:
+#         print("\033[31m", end="")
+#     print("{} ".format(i), end="")
+# if qnt == 2:
+#     print("\n\033[m{} é primo".format(num))
+# else:
+#     print("\n\033[m{} não é primo, pois é divisível {} vezes".format(num, qnt))
+
+# exercicio 053
+
+# exercicio 054
+
+# os.system("cls")
+# contMaior = 0
+# contMenor = 0
+# for i in range (1, 8):
+#     anoNasc = int(input("Em que ano a {}° pessoa nasceu? ".format(i)))
+#     anoAtual = datetime.date.today().year
+#     idade = anoAtual - anoNasc
+#     if idade >= 18:
+#         contMaior += 1
+#     else:
+#         contMenor += 1
+# print("Há {} pessoas maiores de idade\nE {} pessoas menores de idade".format(contMaior, contMenor))
+
+# exercicio 055
+
+# os.system("cls")
+# for i in range(1, 6):
+#     peso = float(input("Iforme o peso (Kg) da {}° pessoa: ".format(i)))
+#     if i == 1:
+#         maior = peso
+#         menor = peso
+#     else:
+#         if maior < peso:
+#             maior = peso
+#         if menor > peso:
+#             menor = peso
+# print("O maior peso lido foi de {}Kg \nE o menor peso lido foi de {}Kg".format(maior, menor))
+
+# exercicio 056
+
+os.system("cls")
+for i in range(1, 5):
+    print("----{}ª PESSOA-----".format(i))
+    nome = str(input("Nome: ")).strip()
+    idade = int(input("Idade: "))
+    sexo = str(input("Sexo [M/F]: ")).strip().lower()
+    print("")
