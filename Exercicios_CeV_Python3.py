@@ -638,3 +638,15 @@ else:
 # sleep(1)
 # print(maquina)
 
+#                                       LAÇOS FOR
+
+# exercicio 046
+# from time import sleep
+# import os
+
+# os.system("cls")
+# for i in range(10, 0, -1):
+#     print(i)
+#     sleep(1)
+
+# exercicio 047
