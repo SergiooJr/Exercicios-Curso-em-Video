@@ -820,3 +820,51 @@ else:
 # print("A média de idade do grupo é de {:.1f} anos".format(media))
 # print("O homem mais velho tem {} anos e se chama {}".format(maior, nomeMais))
 # print("Ao todo são {} mulheres com menos de 20 anos".format(contIdade))
+
+#                               LAÇO WHILE
+
+# exercicio 057
+# sexo = str(input("Digite seu sexo [M/F]: ")).strip().upper()
+# while sexo != "M" and sexo != "F":
+#     sexo = str(input("Sexo inválido, digite novamente [M/F]: ")).strip().upper()
+# print("fim")
+
+# exercicio 058
+# tentativa = 1
+# numeroSorteado = random.randint(0, 5)
+# print("O computador sorteou um numero entre 0 e 5, consegue adivinhar?\n")
+# palpite = int(input("Digite seu palpite: "))
+# while palpite != numeroSorteado:
+#     palpite = int(input("Não foi nese número que o computador pensou, tente novamente: "))
+#     tentativa += 1
+# print("Parabéns, você acertou na {}° tentativa!".format(tentativa))
+
+# exercicio 059
+
+# exercicio 60
+# # com while
+# fatorial = 1
+# num = int(input("Digite um número para ver seu fatorial: "))
+# while num != 1:
+#     fatorial *= num
+#     num -= 1
+# print(fatorial)
+# # com for
+# fatorial = 1
+# num = int(input("Digite um número para ver seu fatorial: "))
+# for i in range (num, 0, -1):
+#     fatorial *= i
+# print(fatorial)
+
+# exercicio 061
+print("\033[33m="*20)
+print("\033[32m10 TERMOS DE UMA PA")
+print("\033[33m="*20,"\n")
+print("\033[m")
+pTermo = int(input("Primeiro termo: "))
+razao = int(input("Razão: "))
+decimo = pTermo + (10-1) * razao
+for i in range(pTermo, decimo, razao):
+    print(i, end=" → ");
+print("\033[31mACABOU")
+print("\033[m")
