@@ -901,18 +901,24 @@ else:
 #     else: 
 #         print("Opção inválida!")
 
-# exercicio 60
+# exercicio 060
 # # com while
 # fatorial = 1
 # num = int(input("Digite um número para ver seu fatorial: "))
-# while num != 1:
+# print("Calculando {}! = ".format(num), end="")
+# while num != 0:
+#     print("{} ".format(num), end="")
+#     print("x " if num > 1 else " = ", end="")
 #     fatorial *= num
 #     num -= 1
 # print(fatorial)
 # # com for
 # fatorial = 1
 # num = int(input("Digite um número para ver seu fatorial: "))
+# print("Calculando {}! = ".format(num), end="")
 # for i in range (num, 0, -1):
+#     print("{}".format(i), end="")
+#     print(" x " if i>1 else " = ", end="")
 #     fatorial *= i
 # print(fatorial)
 
@@ -923,24 +929,93 @@ else:
 # print("\033[m")
 # pTermo = int(input("Primeiro termo: "))
 # razao = int(input("Razão: "))
-# decimo = pTermo + (10-1) * razao
-# while pTermo != decimo:
-#     print(i, end=" → ");
+# cont = 1
+# while cont <= 10:
+#     print(pTermo, end=" → ");
+#     cont += 1
+#     pTermo += razao
 # print("\033[31mACABOU")
 # print("\033[m")
 
 # exercicio 062
-
+# soma = 0
+# maisTermos = -1
+# print("\033[33m="*20)
+# print("\033[32m10 TERMOS DE UMA PA")
+# print("\033[33m="*20,"\n")
+# print("\033[m")
+# pTermo = int(input("Primeiro termo: "))
+# razao = int(input("Razão: "))
+# cont = 1
+# while cont <= 10:
+#     print(pTermo, end=" → ");
+#     cont += 1
+#     pTermo += razao
+# print("\033[31mPAUSA")
+# print("\033[m")
+# while maisTermos != 0:
+#     maisTermos = int(input("\nQuantos termos você quer mostrar a mais? "))
+#     soma = maisTermos + cont
+#     while cont < soma:
+#         print(pTermo, end=" → ")
+#         cont += 1
+#         pTermo += razao
+#     if maisTermos != 0:
+#         print("\033[31mPAUSA")
+#         print("\033[m")
+#     else:
+#         print("\033[31mFIM")
+#         print("\033[m")
+#                                         OU
+# print("\033[33m="*20)
+# print("\033[32m10 TERMOS DE UMA PA")
+# print("\033[33m="*20,"\n")
+# print("\033[m")
+# pTermo = int(input("Primeiro termo: "))
+# razao = int(input("Razão: "))
+# cont = 1
+# total = 0
+# maisTermos = 10
+# while maisTermos != 0:
+#     total += maisTermos
+#     while cont <= total:
+#         print(pTermo, end=" → ")
+#         pTermo += razao
+#         cont += 1
+#     print("\033[31mPAUSA")
+#     print("\033[m")
+#     maisTermos = int(input("\nQuantos termos você quer mostrar a mais? "))
+# print("\033[31mFIM")
+# print("\033[m")
 
 # exercicio 063
-
+# print("Sequência de Fibonacci")
+# num = int(input("Quantos termos você quer mostrar? "))
+# t1 = 0
+# t2 = 1
+# if num == 1:
+#     print("{}".format(t1, t2), end="")
+#     print("\033[31m → FIM")
+# elif num == 0 or num < 0:
+#     print("Número inválido!")
+# else:
+#     print("{} → {}".format(t1, t2), end="")
+#     cont = 3
+#     while cont <= num:
+#         t3 = t1 + t2
+#         print(" → {}".format(t3), end="")
+#         t1 = t2
+#         t2 = t3
+#         cont += 1
+#     print("\033[31m → FIM")
+# print("\033[m")
 
 # exercicio 064
 # cont = 1
 # soma = 0
 # num = 0
 # while num != 999:
-#     num = int(input("Digite outro valor: "))
+#     num = int(input("Digite um valor [999 para parar]: "))
 #     if num != 999:
 #         soma += num
 #         cont += 1
@@ -966,3 +1041,5 @@ else:
 #     cont += 1
 # media = soma/cont
 # print("A média dos valores digitados foi de {}, o maior número digitado foi o {} e o menor foi o {}".format(media, maior, menor))
+
+#                               WHILE COM BREAK
