@@ -841,6 +841,7 @@ else:
 
 # exercicio 059
 
+
 # exercicio 60
 # # com while
 # fatorial = 1
@@ -857,14 +858,52 @@ else:
 # print(fatorial)
 
 # exercicio 061
-print("\033[33m="*20)
-print("\033[32m10 TERMOS DE UMA PA")
-print("\033[33m="*20,"\n")
-print("\033[m")
-pTermo = int(input("Primeiro termo: "))
-razao = int(input("Razão: "))
-decimo = pTermo + (10-1) * razao
-for i in range(pTermo, decimo, razao):
-    print(i, end=" → ");
-print("\033[31mACABOU")
-print("\033[m")
+# print("\033[33m="*20)
+# print("\033[32m10 TERMOS DE UMA PA")
+# print("\033[33m="*20,"\n")
+# print("\033[m")
+# pTermo = int(input("Primeiro termo: "))
+# razao = int(input("Razão: "))
+# decimo = pTermo + (10-1) * razao
+# while pTermo != decimo:
+#     print(i, end=" → ");
+# print("\033[31mACABOU")
+# print("\033[m")
+
+# exercicio 062
+
+
+# exercicio 063
+
+
+# exercicio 064
+# cont = 1
+# soma = 0
+# num = 0
+# while num != 999:
+#     num = int(input("Digite outro valor: "))
+#     if num != 999:
+#         soma += num
+#         cont += 1
+# print("Foram digitado ao todo {} números, e a soma deles foi {}".format(cont, soma))
+
+# exercicio 065
+# num = 0
+# r = "S"
+# cont = 0
+# soma = 0
+# maior = 0
+# menor = 0
+# while r == "S":
+#     num = int(input("Digite um valor: "))
+#     if cont == 1:
+#         maior = menor = num
+#     if num > maior:
+#         maior = num
+#     if num < menor:
+#         menor = num
+#     r = str(input("Deseja continuar [S/N]? ")).strip().upper()
+#     soma += num
+#     cont += 1
+# media = soma/cont
+# print("A média dos valores digitados foi de {}, o maior número digitado foi o {} e o menor foi o {}".format(media, maior, menor))
