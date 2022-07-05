@@ -1,3 +1,4 @@
+from operator import truediv
 import os
 import time
 import datetime
@@ -824,22 +825,63 @@ else:
 #                               LAÇO WHILE
 
 # exercicio 057
-# sexo = str(input("Digite seu sexo [M/F]: ")).strip().upper()
+# sexo = str(input("Digite seu sexo [M/F]: ")).strip().upper()[0] # pega só a primeira letra
 # while sexo != "M" and sexo != "F":
-#     sexo = str(input("Sexo inválido, digite novamente [M/F]: ")).strip().upper()
+#     sexo = str(input("Sexo inválido, digite novamente [M/F]: ")).strip().upper()[0]
 # print("fim")
 
 # exercicio 058
-# tentativa = 1
-# numeroSorteado = random.randint(0, 5)
-# print("O computador sorteou um numero entre 0 e 5, consegue adivinhar?\n")
-# palpite = int(input("Digite seu palpite: "))
+# tentativa = 0
+# numeroSorteado = random.randint(0, 10)
+# print(numeroSorteado)
+# palpite = -1
+# print("O computador sorteou um numero entre 0 e 10, consegue adivinhar?\n")
 # while palpite != numeroSorteado:
-#     palpite = int(input("Não foi nese número que o computador pensou, tente novamente: "))
+#     palpite = int(input("Digite seu palpite: "))
+#     if palpite == numeroSorteado:
+#         print("Parabéns!")
+#     else:
+#         if palpite > numeroSorteado:
+#             print("O papalpite foi maior que o número sorteado...")
+#         else: 
+#             print("O papalpite foi menor que o número sorteado...")
 #     tentativa += 1
-# print("Parabéns, você acertou na {}° tentativa!".format(tentativa))
+# print("Você acertou na {}° tentativa!".format(tentativa))
+
+#                                                   OU
+# numeroSorteado = random.randint(0, 10)
+# acertou = False
+# tentativa = 0
+# while not acertou:
+#     papalpite = int(input("Digite seu palpite: "))
+#     tentativa += 1
+#     if papalpite == numeroSorteado:
+#         acertou = True
+#     else:
+#         if papalpite < numeroSorteado:
+#             print("O seu paplpite foi menor que o numero sorteado, tente novamente.")
+#         else: 
+#             print("O seu paplpite foi maior que o numero sorteado, tente novamente.")
+# print("Você acertou na {}° tentativa!".format(tentativa))
+
 
 # exercicio 059
+# resultado = 0
+# while opc != 5 and 1 <= opc < 5:
+#     num = float(input("Digite um valor: "))
+#     num2 = float(input("Digite outro valor: "))
+#     print("ESCOLHA")
+#     print("[1] somar")
+#     print("[2] multiplicar")
+#     print("[3] maior")
+#     print("[4] novos valores")
+#     print("[5] sair do programa")
+#     opc = int(input("Qual sua opção? "))
+#     if opc == 1:
+#         resultado = num + num2
+#         print("A soma de {} e {} é {}".format(num, num2, resultado))
+#     elif opc == 2:
+        
 
 
 # exercicio 60
