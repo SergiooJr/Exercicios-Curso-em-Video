@@ -867,9 +867,10 @@ else:
 
 # exercicio 059
 # resultado = 0
-# while opc != 5 and 1 <= opc < 5:
-#     num = float(input("Digite um valor: "))
-#     num2 = float(input("Digite outro valor: "))
+# opc = 0
+# while opc != 5:
+#     num = int(input("\nDigite um valor: "))
+#     num2 = int(input("Digite outro valor: "))
 #     print("ESCOLHA")
 #     print("[1] somar")
 #     print("[2] multiplicar")
@@ -881,8 +882,24 @@ else:
 #         resultado = num + num2
 #         print("A soma de {} e {} é {}".format(num, num2, resultado))
 #     elif opc == 2:
-        
-
+#         resultado = num * num2
+#         print("A multiplicação de {} e {} é {}".format(num, num2, resultado))
+#     elif opc == 3:
+#         if num > num2:
+#             print("Entre {} e {} o {} é maior".format(num, num2, num))
+#         elif num < num2:
+#             print("Entre {} e {} o {} é maior".format(num, num2, num))
+#         else:
+#             print("Os valores são iguais")
+#     elif opc == 4:
+#         os.system("cls")
+#         print("Informe os valores novamente: ")
+#         num = int(input("Digite um valor: "))
+#         num2 = int(input("Digite outro valor: "))
+#     elif opc == 5:
+#         print("Finalizando")
+#     else: 
+#         print("Opção inválida!")
 
 # exercicio 60
 # # com while
