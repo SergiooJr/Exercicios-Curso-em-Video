@@ -1043,3 +1043,52 @@ else:
 # print("A média dos valores digitados foi de {}, o maior número digitado foi o {} e o menor foi o {}".format(media, maior, menor))
 
 #                               WHILE COM BREAK
+
+# exercicio 066
+# soma = 0
+# while True:
+#     num = int(input("Digite um valor [999 para parar]: "))
+#     if num == 999:
+#         print(f"A soma dos valores digitados foi {soma}")
+#         break
+#     soma += num
+
+# exercicio 067
+# while True:
+#     num = int(input("Digite um valor para ver a tabuada: "))
+#     if num < 0:
+#         print("Até a próxima!")
+#     break
+#     for i in range(1, 11):
+#         print(f"{i} x {num} = {num*i}")
+
+# exercicio 068
+# comp = random.randint(1, 10)
+# cont = 0
+# while True:
+#     print("PAR OU ÍMPAR COM O COMPUTADOR")
+#     print("-=-"*20)
+#     jog = int(input("Digite um valor: "))
+#     esc = str(input("Par ou Ímpar? [P/I] ")).strip().upper()[0]
+#     total = jog + comp
+#     resul = total % 2
+#     if esc == "P":
+#         if resul == 0:
+#             print(f"Você ganhou :), o computador jogou {comp} você jogou {jog} e o total foi {total}, DEU PAR")
+#             print("Jogue novamente")
+#             cont += 1
+#         else:
+#             print(f"Você perdeu :(, o computador jogou {comp} você jogou {jog} e o total foi {total}, DEU ÍMPAR")
+#             print(f"GAME OVER! Você venceu {cont} vezes")
+#             break
+#     elif esc == "I":
+#         if resul == 1:
+#             print(f"Você ganhou :), o computador jogou {comp} você jogou {jog} e o total foi {total}, DEU ÍMPAR")
+#             print("Jogue novamente")
+#             cont += 1
+#         else:
+#             print(f"Você perdeu :(, o computador jogou {comp} você jogou {jog} e o total foi {total}, DEU PAR")
+#             print(f"GAME OVER! Você venceu {cont} vezes")
+#             break
+#     else:
+#         print("Opção inválida!")
