@@ -1063,23 +1063,24 @@ else:
 #         print(f"{i} x {num} = {num*i}")
 
 # exercicio 068
-# comp = random.randint(1, 10)
 # cont = 0
 # while True:
+#     comp = random.randint(1, 10)
+#     esc = " "
 #     print("PAR OU ÍMPAR COM O COMPUTADOR")
 #     print("-=-"*20)
 #     jog = int(input("Digite um valor: "))
-#     esc = str(input("Par ou Ímpar? [P/I] ")).strip().upper()[0]
 #     total = jog + comp
 #     resul = total % 2
+#     while esc not in "PI":
+#         esc = str(input("Par ou Ímpar? [P/I] ")).strip().upper()[0]
 #     if esc == "P":
 #         if resul == 0:
 #             print(f"Você ganhou :), o computador jogou {comp} você jogou {jog} e o total foi {total}, DEU PAR")
 #             print("Jogue novamente")
 #             cont += 1
 #         else:
-#             print(f"Você perdeu :(, o computador jogou {comp} você jogou {jog} e o total foi {total}, DEU ÍMPAR")
-#             print(f"GAME OVER! Você venceu {cont} vezes")
+#             print(f"Você perdeu :( o computador jogou {comp} você jogou {jog} e o total foi {total}, DEU ÍMPAR")
 #             break
 #     elif esc == "I":
 #         if resul == 1:
@@ -1088,7 +1089,104 @@ else:
 #             cont += 1
 #         else:
 #             print(f"Você perdeu :(, o computador jogou {comp} você jogou {jog} e o total foi {total}, DEU PAR")
-#             print(f"GAME OVER! Você venceu {cont} vezes")
 #             break
 #     else:
 #         print("Opção inválida!")
+# print(f"GAME OVER! Você venceu {cont} vezes")
+
+# exercicio 069
+# mais = 0
+# homens = 0
+# menos = 0
+# while True:
+#     sexo = " "
+#     escolha = " "
+#     print("="*20)
+#     print("CADASTRE UMA PESSOA")
+#     print("="*20)
+#     idade = int(input("Idade: "))
+#     if idade >= 18:
+#         mais += 1
+#     while sexo not in "MF":
+#         sexo = str(input("Sexo [M/F]: ")).strip().upper()[0]
+#     if sexo == "M":
+#         homens += 1
+#     if sexo == "F" and idade < 20:
+#         menos += 1
+#     while escolha not in "SN":
+#         escolha = str(input("Deseja continuar? [S/N] ")).strip().upper()[0]
+#     if escolha == "N":
+#         print("Imprimindo análises...")
+#         break
+# print(f"Total de pessoas com mais de 18 anos: {mais}")
+# print(f"Ao todo temos {homens} homens cadastrados")
+# print(f"E temos {menos} mulheres com menos de 20 anos")
+
+# exercicio 070
+# mBarato = total = cont = mMil = 0
+# nomeBarato = " "
+# while True:
+#     nome = str(input("Nome do produto: "))
+#     valor = float(input("Preço: R$"))
+#     total += valor
+#     cont += 1
+#     if cont == 1:
+#         mBarato = valor
+#         nomeBarato = nome
+#     else:
+#         if valor < mBarato:
+#             mBarato = valor
+#             nomeBarato = nome
+#     if valor > 1000:
+#         mMil += 1
+#     continua = " "
+#     while continua not in "sn":
+#         continua = str(input("Quer continuar? [S/N] ")).strip().lower()[0]
+#     if continua == "n":
+#         break
+# print(f"Total gasto na compra é de: R${total}")
+# print(f"Os produtos que custam mais de R$1000,00 são: {mMil}")
+# print(f"O nome do produto mais barato é: {nomeBarato}")
+
+# exercicio 071
+# valor = int(input("Digite o valor a ser sacado: R$"))
+# total = valor
+# cedula = 50
+# qntCedula = 0
+# while True:
+#     if total >= cedula:
+#         total -= cedula
+#         qntCedula += 1
+#     else:
+#         if qntCedula > 0:
+#             print(f"Total de {qntCedula} cédulas de R${cedula}")
+#         if cedula == 50:
+#             cedula = 20
+#         elif cedula == 20:
+#             cedula = 10
+#         elif cedula == 10:
+#             cedula = 1
+#         qntCedula = 0
+#         if total == 0:
+#             break
+# #                         FORMA MEGA OTIMIZADA
+# valorSaque = int(input('Valor do saque: R$ '))
+# print('-' * 40)
+# for nota in [50, 20, 10, 1]:
+#     quantidade = valorSaque // nota
+#     valorSaque = valorSaque % nota
+#     if quantidade > 0:
+#         print(f'{quantidade} notas de R$ {nota}')
+# #                         FORMA MAIS MATEMÁTICA
+# valor = int(input("Digite o valor a ser sacado: R$"))
+# nota50 = valor // 50
+# valor %=  50
+# nota20 = valor // 20
+# valor %= 20
+# nota10 = valor // 10
+# valor %= 10
+# nota1 = valor // 1
+# print(f"notas de 50 = {nota50}")
+# print(f"notas de 20 = {nota20}")
+# print(f"notas de 10 = {nota10}")
+# print(f"notas de 1 = {nota1}")
