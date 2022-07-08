@@ -1176,7 +1176,7 @@ else:
 #     quantidade = valorSaque // nota
 #     valorSaque = valorSaque % nota
 #     if quantidade > 0:
-#         print(ssf'{quantidade} notas de R$ {nota}')
+#         print(f'{quantidade} notas de R$ {nota}')
 # #                         FORMA MAIS MATEMÁTICA
 # valor = int(input("Digite o valor a ser sacado: R$"))
 # nota50 = valor // 50
