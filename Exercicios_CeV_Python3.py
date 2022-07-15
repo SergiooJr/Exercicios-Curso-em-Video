@@ -1095,32 +1095,32 @@ else:
 # print(f"GAME OVER! Você venceu {cont} vezes")
 
 # exercicio 069
-# mais = 0
-# homens = 0
-# menos = 0
-# while True:
-#     sexo = " "
-#     escolha = " "
-#     print("="*20)
-#     print("CADASTRE UMA PESSOA")
-#     print("="*20)
-#     idade = int(input("Idade: "))
-#     if idade >= 18:
-#         mais += 1
-#     while sexo not in "MF":
-#         sexo = str(input("Sexo [M/F]: ")).strip().upper()[0]
-#     if sexo == "M":
-#         homens += 1
-#     if sexo == "F" and idade < 20:
-#         menos += 1
-#     while escolha not in "SN":
-#         escolha = str(input("Deseja continuar? [S/N] ")).strip().upper()[0]
-#     if escolha == "N":
-#         print("Imprimindo análises...")
-#         break
-# print(f"Total de pessoas com mais de 18 anos: {mais}")
-# print(f"Ao todo temos {homens} homens cadastrados")
-# print(f"E temos {menos} mulheres com menos de 20 anos")
+mais = 0
+homens = 0
+menos = 0
+while True:
+    sexo = " "
+    escolha = " "
+    print("="*20)
+    print("CADASTRE UMA PESSOA")
+    print("="*20)
+    idade = int(input("Idade: "))
+    if idade >= 18:
+        mais += 1
+    while sexo not in "MF":
+        sexo = str(input("Sexo [M/F]: ")).strip().upper()[0]
+    if sexo == "M":
+        homens += 1
+    if sexo == "F" and idade < 20:
+        menos += 1
+    while escolha not in "SN":
+        escolha = str(input("Deseja continuar? [S/N] ")).strip().upper()[0]
+    if escolha == "N":
+        print("Imprimindo análises...")
+        break
+print(f"Total de pessoas com mais de 18 anos: {mais}")
+print(f"Ao todo temos {homens} homens cadastrados")
+print(f"E temos {menos} mulheres com menos de 20 anos")
 
 # exercicio 070
 # mBarato = total = cont = mMil = 0
