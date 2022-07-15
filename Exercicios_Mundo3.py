@@ -75,16 +75,22 @@ os.system("cls")
 # exercicio 076
 # lista = ("Lápis", 1.75, "Borracha", 2.00, "Cardeno", 15.90, "Estojo", 25.00, "Transferidor", 4.20, "Compasso", 9.99, "Mochila", 120.32, "Canetas", 22.30, "Livro", 34.90)
 
-# for i in range(1, len(lista)+1, 2):
-#     for i in lista:
-#         print("\n", i, end=" ")
+# print("-"*30)
+# print(f'{"LISTAGEM DE PREÇOS":^30}') # ":^30" 30 caracteres centralizado
+# print("-"*30)
+# for i in range(0, len(lista)):
+#     if i % 2 == 0:
+#         print(f"{lista[i]:.<30}", end="") # ":.<30" 30 pontos alinhados a esquerda
+#     else:
+#         print(f"R${lista[i]:>7}")
 
 # exercicio 077
 # palavras = ("aprender", "programar", "linguagem", "python", "curso", "gratis", "estudar", "praticar", "trabalhar", "mercado", "programador", "futuro")
 # for i in palavras:
 #     print(f"Na palavra {i.upper()} temos ", end="")
-#     tuple(i)
-#     for v in i:
-#         if v in "aeiou":
-#             print(v, end=" ")
+#     for letra in i:
+#         if letra in "aeiou":
+#             print(letra, end=" ")
 #     print("\n")
+
+#                                                   LISTAS
