@@ -4,6 +4,7 @@ import time
 import datetime
 import math
 import random
+from turtle import pos
 os.system("cls")
 #                                                  TUPLAS
 # exercicio 072
@@ -94,3 +95,37 @@ os.system("cls")
 #     print("\n")
 
 #                                                   LISTAS
+# exercicio 078
+# lista = list()
+# maior = 0
+# menor = 0
+# for i in range(0, 5):
+#     lista.append(int(input(f"Digite um valor para a Posição {i}: ")))
+#     if i == 0:
+#         maior = menor = lista[i]
+#     if maior < lista[i]:
+#         maior = lista[i]
+#     elif menor > lista[i]:
+#         menor = lista[i]
+# print(f"\nO maior valor digitado foi: {maior} nas posições ", end="")
+# for p, v in enumerate(lista):
+#     if v == maior:
+#         print(f"{p} ", end="")
+# print(f"\nO menor valor digitado foi: {menor} nas posições ", end="")
+# for p, v in enumerate(lista):
+#     if v == menor:
+#         print(f"{p} ", end="")
+
+#                                   OU
+
+# lista = list(int(input(f"Digite um valor para a Posição {i}: "))for i in range (0, 5))
+# maior = max(lista)
+# menor = min(lista)
+# print(f"\nO maior valor digitado foi: {maior} nas posições ", end="")
+# for p, v in enumerate(lista):
+#     if v == maior:
+#         print(f"{p}... ", end="")
+# print(f"\nO menor valor digitado foi: {menor} nas posições ", end="")
+# for p, v in enumerate(lista):
+#     if v == menor:
+#         print(f"{p}... ", end="")
