@@ -147,7 +147,18 @@ os.system("cls")
 # print(f"Você digitou os valores {valores}") 
 
 # exercicio 080
-
+numeros = []
+for i in range(1, 6):
+    num = int(input("Digite um valor: "))
+    if i == 1 or num > numeros[-1]:
+        numeros.append(num)
+        print("Número adicionado na última posição.")
+    else:
+        for pos, val in enumerate(numeros):
+            if num <= numeros[pos]:
+                print(f"Adicionado na {pos} da lista.")
+                numeros.insert(pos, num)
+print(f"{numeros}")  
 
 # exercicio 081
 # numeros = []
