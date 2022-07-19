@@ -1,10 +1,8 @@
-from ast import While
 import os
 import time
 import datetime
 import math
 import random
-from turtle import pos
 os.system("cls")
 #                                                  TUPLAS
 # exercicio 072
@@ -94,7 +92,7 @@ os.system("cls")
 #             print(letra, end=" ")
 #     print("\n")
 
-#                                                   LISTAS
+#                                                   LISTAS(pt-1)
 # exercicio 078
 # lista = list()
 # maior = 0
@@ -129,3 +127,65 @@ os.system("cls")
 # for p, v in enumerate(lista):
 #     if v == menor:
 #         print(f"{p}... ", end="")
+# print(lista)
+
+# exercicio 079
+# valores = []
+# while True:
+#     escolha = " "
+#     valor = int(input("Valor: "))
+#     if valor not in valores:
+#         valores.append(valor)
+#         print("Adicionando valor...")
+#     else:
+#         print("Valor já existente na lista, não vou adicioná-lo")
+#     while escolha not in "SN":
+#         escolha = str(input("Deseja continuar? [S/N] ")).strip().upper()[0]
+#     if escolha == "N":
+#         break
+# valores.sort()
+# print(f"Você digitou os valores {valores}") 
+
+# exercicio 080
+
+
+# exercicio 081
+# numeros = []
+# while True:
+#     escolha = " "
+#     numeros.append(int(input("Digite um valor: ")))
+#     while escolha not in "SN":
+#         escolha = str(input("Deseja continuar? [S/N] ")).strip().upper()[0]
+#     if escolha == "N":
+#         break
+# print(f"Foram digitados {len(numeros)} números")
+# numeros.sort(reverse=True)
+# print(f"A lista de valores em ordem decrescente é {numeros}")
+# if 5 in numeros:
+#     print("O valor 5 está na lista. Nas posições: ", end="")
+# numeros.sort() # coloquei isso, pois sem isso, o numero maior ficava na posição zero smp, tire e teste
+# for posi, val in enumerate(numeros):
+#     if val == 5:
+#         print(posi, end=" ")
+# if 5 not in numeros:
+#     print("O valor 5 não está na lista")
+
+# exercicio 082
+# valores = []
+# valoresP = []
+# valoresI = []
+# while True:
+#     escolha = " "
+#     num = int(input("Digite um valor: "))
+#     valores.append(num)
+#     if num % 2 == 1:
+#         valoresI.append(num)
+#     else:
+#         valoresP.append(num)
+#     while escolha not in "SN":
+#         escolha = str(input("Deseja continuar? [S/N] ")).strip().upper()[0]
+#     if escolha == "N":
+#         break
+# print(f"Lista cheia: {valores} \n Lista pares: {valoresP} \n Lista ímpares: {valoresI}")
+
+# exercicio 083
