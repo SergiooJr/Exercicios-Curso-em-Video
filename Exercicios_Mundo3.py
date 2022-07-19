@@ -147,18 +147,19 @@ os.system("cls")
 # print(f"Você digitou os valores {valores}") 
 
 # exercicio 080
-numeros = []
-for i in range(1, 6):
-    num = int(input("Digite um valor: "))
-    if i == 1 or num > numeros[-1]:
-        numeros.append(num)
-        print("Número adicionado na última posição.")
-    else:
-        for pos, val in enumerate(numeros):
-            if num <= numeros[pos]:
-                print(f"Adicionado na {pos} da lista.")
-                numeros.insert(pos, num)
-print(f"{numeros}")  
+# numeros = []
+# for i in range(1, 6):
+#     num = int(input("Digite um valor: "))
+#     if i == 1 or num > numeros[-1]:
+#         numeros.append(num)
+#         print("Número adicionado na última posição.")
+#     else:
+#         for pos, val in enumerate(numeros):
+#             if num <= val:
+#                 print(f"Adicionado na {pos} posição da lista.")
+#                 numeros.insert(pos, num)
+#                 break
+# print(f"{numeros}")  
 
 # exercicio 081
 # numeros = []
@@ -200,3 +201,16 @@ print(f"{numeros}")
 # print(f"Lista cheia: {valores} \n Lista pares: {valoresP} \n Lista ímpares: {valoresI}")
 
 # exercicio 083
+expr = str(input("Digite a expressão: "))
+abertos = []
+fechados = []
+for i in expr:
+    print(i)
+    if i == "(":
+        abertos.append("(")
+    elif i == ")":
+        fechados.append(")")
+if len(abertos) == len(fechados):
+    print("Sua expressão é válida")
+else:
+    print("Sua expressão é inválida")
