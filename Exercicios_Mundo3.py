@@ -201,16 +201,35 @@ os.system("cls")
 # print(f"Lista cheia: {valores} \n Lista pares: {valoresP} \n Lista ímpares: {valoresI}")
 
 # exercicio 083
-expr = str(input("Digite a expressão: "))
-abertos = []
-fechados = []
-for i in expr:
-    print(i)
-    if i == "(":
-        abertos.append("(")
-    elif i == ")":
-        fechados.append(")")
-if len(abertos) == len(fechados):
-    print("Sua expressão é válida")
-else:
-    print("Sua expressão é inválida")
+# ERRADO
+# expr = str(input("Digite a expressão: "))
+# abertos = []
+# fechados = []
+# for i in expr:
+#     print(i)
+#     if i == "(":
+#         abertos.append("(")
+#     elif i == ")":
+#         fechados.append(")")
+# if len(abertos) == len(fechados):
+#     print("Sua expressão é válida")
+# else:
+#     print("Sua expressão é inválida")
+# CORRETO
+# lista = []
+# expr = str(input("Digite a expressão: "))
+# for simb in expr:
+#     if simb == "(":
+#         lista.append("(")
+#     elif simb == ")":
+#         if len(lista)>0:
+#             lista.pop()
+#         else:
+#             lista.append(")")
+#             break
+# if len(lista) == 0:
+#     print("Sua expressão está válida!")
+# else:
+#     print("Sua expressão está inválida!")
+#                                                   LISTAS(pt-2)
+
