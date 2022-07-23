@@ -288,3 +288,5 @@ os.system("cls")
 #     for c in range(0, 3):
 #         print(f"[{matriz[l][c]:^5}]", end="") # ":^5" é p ficar centralizado em cinco espaços
 #     print("")
+
+# exercicio 087
