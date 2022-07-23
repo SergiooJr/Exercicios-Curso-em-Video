@@ -290,3 +290,29 @@ os.system("cls")
 #     print("")
 
 # exercicio 087
+# matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+# somaP = somaT = mSeg = 0
+# for l in range(0, 3):
+#     for c in range(0, 3):
+#         matriz[l][c] = int(input(f"Digite um valor para [{l}, {c}]: "))
+# print("=-="*20)
+# for l in range(0, 3):
+#     somaT += matriz[l][2]
+#     for c in range(0, 3):
+#         print(f"[{matriz[l][c]:^3}]", end="")
+#         if matriz[l][c] % 2 == 0:
+#             somaP += matriz[l][c]
+#         #             OU
+#         # if c == 2:
+#         #     somaT += matriz[l][c]
+#         if l == 1 and c == 0:
+#             mSeg = matriz[1][c]
+#         else:
+#             if matriz[1][c] > mSeg:
+#                 mSeg = matriz[1][c]
+#     print()
+# print("-=-"*20)
+# print(f"A soma dos números pares é: {somaP}")
+# print(f"A soma dos valores da terceira coluna é: {somaT}")
+# print(f"O maior valor da segunda linha é: {mSeg}")
+
