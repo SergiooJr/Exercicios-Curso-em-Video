@@ -355,4 +355,59 @@ os.system("cls")
 #     time.sleep(1)
 
 # exercicio 089
+# alunos = []
+# dados = []
+
+# while True:
+#     resp = " "
+#     dados.append(str(input("Nome: ")))
+#     dados.append(float(input("Nota 1: ")))
+#     dados.append(float(input("Nota 2: ")))
+#     dados.append((dados[1] + dados[2])/2)
+#     alunos.append(dados[:])
+#     dados.clear()
+#     if resp not in "SN":
+#         resp = str(input("Deseja continuar? [S/N] ")).strip().upper()[0]
+#     if resp == "N":
+#         break
+# print("=-"*20)
+# print(f'{"N°":<4}{"NOME":<10}{"MÉDIA":>8}')
+# print("-"*20)
+# for p, v in enumerate(alunos):
+#     print(f"{p:<4}{v[0]:<10}{v[3]:>8.1f}")
+# while True:
+#     print("-"*20)
+#     mostra = int(input("Mostrar notas de qual aluno? (999 interrompe) "))
+#     if mostra <= len(alunos):
+#         print(f"As notas de {alunos[mostra][0]} são {alunos[mostra][1]} e {alunos[mostra][2]}")
+#     if mostra == 999:
+#         break
+#                                               OUTRA FORMA
+# alunos = []
+# while True:
+#     resp = " "
+#     nome = str(input("Nome: "))
+#     nota1 = float(input("Nota 1: "))
+#     nota2 = float(input("Nota 2: "))
+#     media = (nota1+nota2)/2
+#     alunos.append([nome, [nota1, nota2], media])
+#     if resp not in "S/N":
+#         resp = str(input("Deseja continuar? [S/N] ")).strip().upper()[0]
+#     if resp == "N":
+#         break
+# print("=-"*20)
+# print(f'{"N°":<4}{"NOME":<10}{"MÉDIA":>8}')
+# print("-"*20)
+# for p, v in enumerate(alunos):
+#     print(f"{p:<4}{v[0]:<10}{v[2]:>8.1f}")
+# while True:
+#     print("-"*20)
+#     mostra = int(input("Mostrar notas de qual aluno? (999 interrompe) "))
+#     if mostra <= len(alunos[0]):
+#         print(f"As notas de {alunos[mostra][0]} são {alunos[mostra][1]}")
+#     if mostra == 999:
+#         break
+
+#                                   DICIONÁRIOS
+# exercicio 090
 
