@@ -232,4 +232,59 @@ os.system("cls")
 # else:
 #     print("Sua expressão está inválida!")
 #                                                   LISTAS(pt-2)
+# exercicio 084
+# temp = []
+# princ = []
+# pMaior = pMenor = 0
+# while True:
+#     resp = " "
+#     temp.append(str(input("Nome: ")))
+#     temp.append(int(input("Peso: ")))
+#     if len(princ) == 0:
+#         pMaior = pMenor = temp[1]
+#     else:
+#         if temp[1] > pMaior:
+#             pMaior = temp[1]
+#         if temp[1] < pMenor:
+#             pMenor = temp[1]
+#     princ.append(temp[:])
+#     temp.clear()
+#     while resp not in "SN":
+#         resp = str(input("Deseja continuar? [S/N] ")).strip().upper()[0]
+#     if resp == "N":
+#         break
+# print("="*20)
+# print(f"Foram cadastradas {len(princ)} princ.")
+# print(f"O maior peso foi de {pMaior}Kg. Peso de ", end="")
+# for p in princ:
+#     if p[1] == pMaior:
+#         print(f"[{p[0]}]", end=" ")
+# print(f"\nO menor peso foi {pMenor}Kg. Peso de ", end="")
+# for p in princ:
+#         if p[1] == pMenor:
+#             print(f"[{p[0]}]", end=" ")
 
+# exercicio 085
+# lista = [[], []]
+# p = 0
+# for i in range(1, 8):
+#     valor = int(input(f"Digite o {i}° Valor: "))
+#     if valor % 2 == 0:
+#         lista[0].append(valor)
+#     else:
+#         lista[1].append(valor)
+# lista[0].sort()
+# lista[1].sort()
+# print(f"Todos os valores pares digitados foram {lista[0]}")
+# print(f"Todos os números ímpares digitados foram {lista[1]}")
+
+# exercicio 086
+# matriz = [[0, 0, 0,], [0, 0, 0], [0, 0, 0]]
+# for l in range(0, 3): # linha
+#     for c in range(0, 3): # coluna
+#         matriz[l][c] = int(input(f"Digite um valor para [{l}, {c}]: "))
+# print("-="*20)
+# for l in range(0, 3):
+#     for c in range(0, 3):
+#         print(f"[{matriz[l][c]:^5}]", end="") # ":^5" é p ficar centralizado em cinco espaços
+#     print("")
