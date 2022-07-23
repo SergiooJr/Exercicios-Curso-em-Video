@@ -316,3 +316,43 @@ os.system("cls")
 # print(f"A soma dos valores da terceira coluna é: {somaT}")
 # print(f"O maior valor da segunda linha é: {mSeg}")
 
+# exercicio 088
+# from random import randint
+# lista = []
+# jogos = []
+# cont = contV = total = 0
+# print("-"*30)
+# print("JOGA NA MEGA SENA".center(29)) # centraliza a string em 29 espaços
+# print("-"*30)
+# vezes = int(input("Quantos jogos você quer que eu sorteie? "))
+# while total < vezes:
+#     cont = 0
+#     while True:
+#         valores = randint(1, 60)
+#         if valores not in lista:
+#             lista.append(valores)
+#             cont += 1
+#         if cont >= 6:
+#             break
+#     lista.sort()
+#     jogos.append(lista[:])
+#     lista.clear()
+#     total += 1
+# for p, v in enumerate(jogos):
+#     print(f"Jogo {p+1}: {v}")
+#     time.sleep(1)
+# print(f"\033[32mBOA SORTE!".center(29))
+# print("\033[m")
+#                                   SEM USAR LISTA COMPOSTA
+# jogo = []
+# quant = int(input('Quer gerar quantos jogos? '))
+# for i in range(0, quant):
+#     while len(jogo) < 6:
+#         n = random.randint(1, 60)
+#         if n not in jogo:
+#             jogo.append(n)
+#     print(f'Jogo {i+1}: {sorted(jogo)}')
+#     time.sleep(1)
+
+# exercicio 089
+
