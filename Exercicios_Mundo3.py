@@ -487,14 +487,14 @@ os.system("cls")
 # qnt = int(input(f"Quantas partidas {jogador['nome']} jogou? "))
 # for i in range(1, qnt+1):
 #     gols.append(int(input(f"Quantos gols na partida {i}? ")))
-#     jogador["gols"] = gols.copy()
-# for n in gols:
-#     total += n
+# jogador["gols"] = gols.copy()
+# total = sum(gols)
 # jogador["total"] = total
-# # #                                       MELHOR FORMA
+# #                                       MELHOR FORMA
 # for k, v in jogador.items():
 #     print(f"O campo {k} tem o valor {v}.")
 # print("=-"*30)
+# print(f"O jogador {jogador['nome']} jogou {qnt} partidas:")
 # #                                       PIOR FORMA
 # # print(f"O campo gols tem o valor {jogador['gols']}.")
 # # print(f"O campo total tem o valor {jogador['total']}.")
