@@ -499,9 +499,12 @@ os.system("cls")
 # # print(f"O campo gols tem o valor {jogador['gols']}.")
 # # print(f"O campo total tem o valor {jogador['total']}.")
 # # print(f"O jogador {jogador['nome']} jogou {qnt} partidas")
-# for i in range(1, qnt+1):
-#     print(f"=> Na partida {i}, fez {jogador['gols'][i-1]} gols")
-# print(f"Foi um total de {total} gols")
+# for i, v in enumerate(jogador["gols"]):
+#     print(f"=> Na partida {i}, fez {v} gols.")
+# #                                           OU
+# # for i in range(1, qnt+1):
+# #     print(f"=> Na partida {i}, fez {jogador['gols'][i-1]} gols")
+# # print(f"Foi um total de {total} gols")
 
 # exercicio 094
 # pessoas = []
