@@ -428,9 +428,20 @@ os.system("cls")
 # # print(f"Situação é igual a {aluno['situacao']}")
 
 # exercicio 091
-# for i in range(1, 5):
-#     jogadores = {"jogador": f"jogador{i}", "valor": random.randint(1, 6)}
-#     print(f"O {jogadores['jogador']} tirou {jogadores['valor']}")
+# from operator import itemgetter
+# ranking = list()
+#           CHAVE[0]        VALOR[1]
+# jogos = {'jogador1': random.randint(1, 6), 
+#          'jogador2': random.randint(1, 6),
+#          'jogador3': random.randint(1, 6),
+#          'jogador4': random.randint(1, 6)}
+# print("VALORES SORTEADOS:")
+# for k, v in jogos.items():
+#     print(f"{k} tirou {v} no dado.")
+#     time.sleep(1)
+# ranking = sorted(jogos.items(), key=itemgetter(1), reverse=True) # ordena o jogos.items() pela chave 1, que é o valor, e  o reverse é p/ inverter
+# for i, v in enumerate(ranking):
+#     print(f"{i+1}° lugar: {v[0]} com {v[1]} pontos.")
 #     time.sleep(1)
 
 # exercicio 092
