@@ -494,24 +494,25 @@ os.system("cls")
 # print(f"Foi um total de {total} gols")
 
 # exercicio 094
-pessoas = []
-dados = {}
-total = 0
-while True:
-    resp = " "
-    dados["nome"] = str(input("Nome: "))
-    dados["sexo"] = str(input("Sexo: [M/F] ")).strip().upper()[0]
-    dados["idade"] = int(input("Idade: "))
-    total += dados["idade"]
-    pessoas.append(dados.copy())
-    dados.clear()
-    if resp not in "SN":
-        resp = str(input("Deseja continuar? [S/N] ")).strip().upper()[0]
-    if resp == "N":
-        break
-print(total)
-print(f"O grupo tem {len(pessoas)} pessoas")
-# print(f"A média de idade é de {} anos")
-# print(f"As mulheres cadastradas foram: {}")
-print("- Lista de pessoas acima da média: \n")
+# pessoas = []
+# dados = {}
+# total = 0
+# while True:
+#     resp = " "
+#     dados["nome"] = str(input("Nome: "))
+#     dados["sexo"] = str(input("Sexo: [M/F] ")).strip().upper()[0]
+#     dados["idade"] = int(input("Idade: "))
+#     total += dados["idade"]
+#     pessoas.append(dados.copy())
+#     dados.clear()
+#     if resp not in "SN":
+#         resp = str(input("Deseja continuar? [S/N] ")).strip().upper()[0]
+#     if resp == "N":
+#         break
+# qntPessoas = len(pessoas)
+# media = total/qntPessoas
+# print(f"O grupo tem {qntPessoas} pessoas")
+# print(f"A média de idade é de {media} anos")
+# print(f"As mulheres cadastradas foram: {pessoas[]["sexo"]}")
+# print("- Lista de pessoas acima da média: \n")
 
