@@ -498,21 +498,45 @@ os.system("cls")
 # dados = {}
 # total = 0
 # while True:
-#     resp = " "
+#     dados.clear()
 #     dados["nome"] = str(input("Nome: "))
-#     dados["sexo"] = str(input("Sexo: [M/F] ")).strip().upper()[0]
+#     while True:
+#         dados["sexo"] = str(input("Sexo: [M/F] ")).strip().upper()[0]
+#         if dados["sexo"] in "MF":
+#             break
+#         print("ERRO! Digite apenas M ou F.")
 #     dados["idade"] = int(input("Idade: "))
 #     total += dados["idade"]
 #     pessoas.append(dados.copy())
-#     dados.clear()
-#     if resp not in "SN":
+#     while True:
 #         resp = str(input("Deseja continuar? [S/N] ")).strip().upper()[0]
+#         if resp in "SN":
+#             break
+#         print("ERRO! Responda apenas S ou N.")
 #     if resp == "N":
 #         break
 # qntPessoas = len(pessoas)
 # media = total/qntPessoas
-# print(f"O grupo tem {qntPessoas} pessoas")
-# print(f"A média de idade é de {media} anos")
-# print(f"As mulheres cadastradas foram: {pessoas[]["sexo"]}")
-# print("- Lista de pessoas acima da média: \n")
+# print(pessoas)
+# print(f"A) O grupo tem {qntPessoas} pessoas")
+# print(f"B) A média de idade é de {media:5.2f} anos")
+# print(f"C) As mulheres cadastradas foram: ", end="")
+# for p in pessoas:
+#     if p['sexo'] == "F":
+#         print(f"{p['nome']} ", end="")
+#     else:
+#         print("0")
+#         break
+# print()
+# print("D) Lista de pessoas acima da média: ")
+# for p in pessoas:
+#     if p['idade'] > media:
+#         print("    ", end="")
+#         #                           FORMA MELHOR
+#         for k, v in p.items():
+#             print(f"{k} = {v}; ", end="")
+#         print()
+#         #                           FORMA PIOR
+#         # print(f"nome: {p['nome']}; sexo: {p['sexo']}; idade: {p['idade']};")
+# print("<< ENCERRADO >>")
 
