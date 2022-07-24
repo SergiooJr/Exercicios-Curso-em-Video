@@ -413,13 +413,19 @@ os.system("cls")
 # aluno = {}
 # aluno["nome"] = str(input("Nome: "))
 # aluno["media"] = float(input(f"Média de {aluno['nome']}: "))
-# if aluno["media"] < 7:
-#     aluno["situacao"] = "Reprovado"
-# else:
+# if aluno["media"] >= 7:
 #     aluno["situacao"] = "Aprovado"
-# print(f"Nome é igual a {aluno['nome']}")
-# print(f"Média é igual a {aluno['media']}")
-# print(f"Situação é igual a {aluno['situacao']}")
+# elif 5<= aluno["media"] < 7:
+#     aluno["situacao"] = "Recuperação"
+# else:
+#     aluno["situacao"] = "Reprovado"
+# #                                       MELHOR FORMA
+# for k, v in aluno.items():
+#     print(f"  -   {k} é igual a {v}")
+# #                                       PIOR FORMA
+# # print(f"Nome é igual a {aluno['nome']}")
+# # print(f"Média é igual a {aluno['media']}")
+# # print(f"Situação é igual a {aluno['situacao']}")
 
 # exercicio 091
 # for i in range(1, 5):
@@ -428,29 +434,6 @@ os.system("cls")
 #     time.sleep(1)
 
 # exercicio 092
-# infos = {}
-# nome = str(input("Nome: "))
-# anoN = int(input("Ano de nascimento: "))
-# carteira = int(input("Carteira de Trabalho (0 não tem): "))
-# anoAtual = datetime.date.today().year
-# idade = anoAtual - anoN
-# if carteira != 0:
-#     anoC = int(input("Ano de contratação: "))
-#     sal = int(input("Salário: R$"))
-#     aposentadoria = (anoC + 35)-anoN
-#     infos = {"nome": nome, "idade": idade, "ctps": carteira, "contratação": anoC, "salário": sal, "aposentadoria": aposentadoria}
-#     print(f"Nome tem valor {infos['nome']}")
-#     print(f"Idade tem valor {infos['idade']}")
-#     print(f"ctps tem valor {infos['ctps']}")
-#     print(f"Contratação tem valor {infos['contratação']}")
-#     print(f"Salário tem valor {infos['salário']}")
-#     print(f"Aposentadoria tem valor {infos['aposentadoria']}")
-# else:
-#     infos = {"nome": nome, "idade": idade, "ctps": carteira}
-#     print(f"Nome tem valor {infos['nome']}")
-#     print(f"Idade tem valor {infos['idade']}")
-#     print(f"ctps tem valor {infos['ctps']}")
-#                                                      COM MENOS LINHAS (21 LINHAS)
 # infos = {}
 # infos["nome"] = str(input("Nome: "))
 # anoN = int(input("Ano de nascimento: "))
@@ -462,16 +445,28 @@ os.system("cls")
 #     infos["contratação"] = int(input("Ano de contratação: "))
 #     infos["salário"] = int(input("Salário: R$"))
 #     infos["aposentadoria"] = (infos["contratação"] + 35)-anoN
-#     print(f"Nome tem valor {infos['nome']}")
-#     print(f"Idade tem valor {infos['idade']}")
-#     print(f"ctps tem valor {infos['ctps']}")
-#     print(f"Contratação tem valor {infos['contratação']}")
-#     print(f"Salário tem valor {infos['salário']}")
-#     print(f"Aposentadoria tem valor {infos['aposentadoria']}")
+#     print("=-"*20)
+#     #                          MELHOR FORMA
+#     for k, v in infos.items():
+#         print(f"{k} tem valor: {v}")
+#     #                       PIOR FORMA
+#     # print("=-"*20)
+#     # print(f"Nome tem valor {infos['nome']}")
+#     # print(f"Idade tem valor {infos['idade']}")
+#     # print(f"ctps tem valor {infos['ctps']}")
+#     # print(f"Contratação tem valor {infos['contratação']}")
+#     # print(f"Salário tem valor {infos['salário']}")
+#     # print(f"Aposentadoria tem valor {infos['aposentadoria']}")
 # else:
-#     print(f"Nome tem valor {infos['nome']}")
-#     print(f"Idade tem valor {infos['idade']}")
-#     print(f"ctps tem valor {infos['ctps']}")
+#     print("=-"*20)
+#     #                        MELHOR FORMA
+#     for k, v in infos.items():
+#         print(f"{k} tem valor: {v}")
+#     #                      PIOR FORMA
+#     # print("=-"*20)
+#     # print(f"Nome tem valor {infos['nome']}")
+#     # print(f"Idade tem valor {infos['idade']}")
+#     # print(f"ctps tem valor {infos['ctps']}")
 
 # exercicio 093
 # jogador = dict()
@@ -485,10 +480,14 @@ os.system("cls")
 # for n in gols:
 #     total += n
 # jogador["total"] = total
-# print(f"O campo nome tem o valor {jogador['nome']}.")
-# print(f"O campo gols tem o valor {jogador['gols']}.")
-# print(f"O campo total tem o valor {jogador['total']}.")
-# print(f"O jogador {jogador['nome']} jogou {qnt} partidas")
+# # #                                       MELHOR FORMA
+# for k, v in jogador.items():
+#     print(f"O campo {k} tem o valor {v}.")
+# print("=-"*30)
+# #                                       PIOR FORMA
+# # print(f"O campo gols tem o valor {jogador['gols']}.")
+# # print(f"O campo total tem o valor {jogador['total']}.")
+# # print(f"O jogador {jogador['nome']} jogou {qnt} partidas")
 # for i in range(1, qnt+1):
 #     print(f"=> Na partida {i}, fez {jogador['gols'][i-1]} gols")
 # print(f"Foi um total de {total} gols")
