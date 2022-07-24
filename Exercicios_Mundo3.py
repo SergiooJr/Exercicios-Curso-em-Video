@@ -504,7 +504,7 @@ os.system("cls")
 # #                                           OU
 # # for i in range(1, qnt+1):
 # #     print(f"=> Na partida {i}, fez {jogador['gols'][i-1]} gols")
-# # print(f"Foi um total de {total} gols")
+# print(f"Foi um total de {total} gols")
 
 # exercicio 094
 # pessoas = []
