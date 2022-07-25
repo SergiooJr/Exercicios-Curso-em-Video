@@ -28,6 +28,8 @@ os.system("cls")
 # def contador(i, f, p):
 #     if p<0:
 #         p*=-1
+#            OU
+# #        p = abs(p) (tranforma o numero em positivo)
 #     if p == 0:
 #         p = 1
 #     if i>f:
