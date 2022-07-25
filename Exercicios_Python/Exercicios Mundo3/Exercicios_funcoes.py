@@ -18,7 +18,7 @@ os.system("cls")
 # exercicio 097
 # def escreva(msg):
 #     print("~"*len(msg))
-#     print(msg)
+#     print(f'  {msg}')
 #     print('~'*len(msg))
 # escreva('Gustavo Guanabara')
 # escreva('Curso de Python no Youtube')
