@@ -25,7 +25,27 @@ os.system("cls")
 # escreva('CeV')
 
 # exercicio 098
-
+# def contador(i, f, p):
+#     if p<0:
+#         p*=-1
+#     if p == 0:
+#         p = 1
+#     if i>f:
+#         print(f'Contagem de {i} até {f} de {p} em {p}')
+#         for c in range(i, f-1, -p):
+#             time.sleep(0.5)
+#             print(c, end=" ")
+#         print()
+#     else:
+#         print(f'Contagem de {i} até {f} de {p} em {p}')
+#         for c in range(i, f+1, p):
+#             time.sleep(0.5)
+#             print(c, end=" ")
+#         print()
+# contador(1, 10, 1)
+# contador(10, 0, 2)
+# print('Agora é sua vez de personalizar a contagem!')
+# contador(int(input('Início: ')), int(input('Fim: ')), int(input('Passo: ')))
 
 # exercicio 099
 # def maior(*valores):
