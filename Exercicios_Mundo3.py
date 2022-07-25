@@ -553,3 +553,51 @@ os.system("cls")
 #         # print(f"nome: {p['nome']}; sexo: {p['sexo']}; idade: {p['idade']};")
 # print("<< ENCERRADO >>")
 
+# exercicio 095
+# time = list()
+# jogador = dict()
+# gols = list()
+# while True:
+#     jogador.clear()
+#     gols.clear()
+#     jogador["nome"] = str(input("Nome do jogador: "))
+#     qnt = int(input(f"Quantas partidas {jogador['nome']} jogou? "))
+#     for i in range(1, qnt+1):
+#         gols.append(int(input(f"Quantos gols na partida {i}? ")))
+#     jogador["gols"] = gols.copy()
+#     total = sum(gols)
+#     jogador["total"] = total
+#     time.append(jogador.copy())
+#     while True:
+#         resp = str(input("Deseja continuar? [S/N] ")).strip().upper()[0]
+#         if resp in "SN":
+#             break
+#         print("ERRO! Responda apenas com S ou N.")
+#     if resp == "N":
+#         break
+# print("-="*25)
+# print(f"{'COD':<4} ", end="")
+# for i in jogador.keys():
+#     i = str(i).upper()
+#     print(f"{i:<15} ", end="")
+# print()
+# print("-"*50)
+# for p, v in enumerate(time):
+#     print(f"{p:<4} ", end="")
+#     for d in v.values():
+#         print(f"{str(d):<15} ", end="")
+#     print()
+# print("-"*50)
+# while True:
+#     busca = int(input("Mostrar dados de qual jogador? (999 para parar) "))
+#     if busca == 999:
+#         break
+#     if busca < 0 or busca >= len(time):
+#         print(f"ERRO! Não existe jogador com código {busca}!")
+#     else:
+#         print(f" ---  LEVANTAMENTO DO JOGADOR {time[busca]['nome']}  --- ")
+#     for i, g in enumerate(time[busca]["gols"]):
+#         print(f"    No jogo {i+1} fez {g} gols. ")
+#     print(f"Um total de {time[busca]['total']} gols!")
+#     print("-"*40)
+# print("<< VOLTE SEMPRE >>")
