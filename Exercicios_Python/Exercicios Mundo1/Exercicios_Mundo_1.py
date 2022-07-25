@@ -1,5 +1,4 @@
 #                                   MUNDO 1
-from operator import truediv
 import os
 import time
 import datetime
