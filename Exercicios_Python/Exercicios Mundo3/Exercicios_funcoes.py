@@ -90,3 +90,24 @@ os.system("cls")
 # somaPar(numeros)
 
 #                                                       FUNÇÕES-pt2
+# exercicio 101
+# def voto(dNasc):
+#     anoA = datetime.date.today().year
+#     idade = anoA - dNasc
+#     if idade < 16:
+#         print(f"Com {idade} anos: NÃO VOTA.")
+#     elif idade < 18 or idade > 64:
+#         print(f"Com {idade} anos: VOTO OPCIONAL.")
+#     else:
+#         print(f"Com {idade} anos: VOTO OBRIGATÓRIO")
+# nasc = int(input("Em que ano você nasceu? "))
+# voto(nasc)
+
+# exercicio 102
+def fatorial(num=0):
+    f = 1
+    for f in range(num, 0, -1):
+        f *= num
+    return f
+print(fatorial(5))
+    
