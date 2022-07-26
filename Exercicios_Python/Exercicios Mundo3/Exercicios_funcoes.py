@@ -133,3 +133,10 @@ os.system("cls")
 #     else: 
 #         print(f"O jogador {nome} fez {gols} gol(s) no campeonato.")
 # ficha(str(input("Nome do jogador: ")), str(input("Número de gols: ")))
+
+# exercicio 104
+def leiaInt(num):
+    
+
+n = leiaInt('Digite um número: ')
+print(f'Você acabou de digitar o número {n}')
