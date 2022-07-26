@@ -123,11 +123,13 @@ os.system("cls")
 # help(fatorial)
 
 # exercicio 103
-def ficha(nome="", gols=""):
-    if nome == "":
-       print(f"O jogador <desconhecido> fez ",end="")
-    if gols == "":
-        print(" 0 gol(s) no campeonato.")
-    else: 
-        print(f"O jogador {nome} fez {gols} gol(s) no campeonato.")
-ficha(str(input("Nome do jogador: ")), str(input("Número de gols: ")))
+# def ficha(nome="", gols=""):
+#     if nome == "":
+#        print(f"O jogador <desconhecido> fez {gols} gol(s) no campeonato.")
+#     elif gols == "":
+#          print(f"O jogador {nome} fez 0 gols no campeonato.")
+#     elif nome == "" and gols == "":
+#         print(f"O jogador <desconhecido> fez 0 gols no campeonato.")
+#     else: 
+#         print(f"O jogador {nome} fez {gols} gol(s) no campeonato.")
+# ficha(str(input("Nome do jogador: ")), str(input("Número de gols: ")))
