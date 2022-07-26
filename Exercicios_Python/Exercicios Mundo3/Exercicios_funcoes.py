@@ -121,4 +121,13 @@ os.system("cls")
 #     return f
 # print(fatorial(5, show=True))
 # help(fatorial)
-    
+
+# exercicio 103
+def ficha(nome="", gols=""):
+    if nome == "":
+       print(f"O jogador <desconhecido> fez ",end="")
+    if gols == "":
+        print(" 0 gol(s) no campeonato.")
+    else: 
+        print(f"O jogador {nome} fez {gols} gol(s) no campeonato.")
+ficha(str(input("Nome do jogador: ")), str(input("Número de gols: ")))
