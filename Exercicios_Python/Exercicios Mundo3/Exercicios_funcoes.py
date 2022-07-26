@@ -104,10 +104,21 @@ os.system("cls")
 # voto(nasc)
 
 # exercicio 102
-def fatorial(num=0):
-    f = 1
-    for f in range(num, 0, -1):
-        f *= num
-    return f
-print(fatorial(5))
+# def fatorial(num=0, show=False):
+#     """
+#     -> Calcula o fatorial de um numero.
+#         - param num: O numero a ser calculado.
+#         - param show: (opcional) Mostrar ou nao a conta.
+#         - return: O valor do fatorial de num.
+#     Funcao criada por Sergio Junior.
+#     """
+#     f = 1
+#     for c in range(num, 0, -1):
+#         f *= c
+#         if show == True:
+#             print(f"{c} x ", end="")
+#     print("= ", end="")
+#     return f
+# print(fatorial(5, show=True))
+# help(fatorial)
     
