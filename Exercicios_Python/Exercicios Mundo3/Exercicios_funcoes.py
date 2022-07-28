@@ -1,4 +1,5 @@
 #                                                       FUNÇÕES
+from enum import Flag
 import os
 import time
 import datetime
@@ -102,6 +103,18 @@ os.system("cls")
 #         print(f"Com {idade} anos: VOTO OBRIGATÓRIO")
 # nasc = int(input("Em que ano você nasceu? "))
 # voto(nasc)
+#                           OU
+# def voto(dNasc):
+#     anoA = datetime.date.today().year
+#     idade = anoA - dNasc
+#     if idade < 16:
+#         return f"Com {idade} anos: NÃO VOTA."
+#     elif idade < 18 or idade > 64:
+#         return f"Com {idade} anos: VOTO OPCIONAL."
+#     else:
+#         return f"Com {idade} anos: VOTO OBRIGATÓRIO"
+# nasc = int(input("Em que ano você nasceu? "))
+# print(voto(nasc))
 
 # exercicio 102
 # def fatorial(num=0, show=False):
@@ -132,11 +145,39 @@ os.system("cls")
 #         print(f"O jogador <desconhecido> fez 0 gols no campeonato.")
 #     else: 
 #         print(f"O jogador {nome} fez {gols} gol(s) no campeonato.")
-# ficha(str(input("Nome do jogador: ")), str(input("Número de gols: ")))
+# ficha(str(input("Nome do jogador: ")).strip(), str(input("Número de gols: ")).strip())
 
 # exercicio 104
-def leiaInt(num):
-    
+# def leiaInt(num):
+#     ok = False
+#     valor = 0
+#     while True:
+#         r = str(input(num))
+#         if r.isnumeric():
+#             valor = int(r)
+#             ok = True
+#         else:
+#             print("\033[0;31mERRO! Digite um número inteiro válido.\033[m")
+#         if ok:
+#             return valor
 
-n = leiaInt('Digite um número: ')
-print(f'Você acabou de digitar o número {n}')
+# n = leiaInt('Digite um número: ')
+# print(f'Você acabou de digitar o número {n}')
+
+# exercicio 105
+# def notas (*n, sit=False):
+#     dados = dict()
+#     dados["total"] = len(n)
+#     dados["maior"] = max(n)
+#     dados["menor"] = min(n)
+#     dados["media"] = (f"{sum(n)/len(n):.1f}")
+#     if sit:
+#         if float(dados["media"]) >= 7:
+#             dados["situação"] = "BOA"
+#         elif dados["media"] >= 5:
+#             dados["situação"] = "RAZOÁVEL"
+#         else:
+#             dados["situação"] = "RUIM"
+#     return dados
+# resp = notas(5.5, 9.5, 10, 6.5, sit=False)
+# print(resp)
