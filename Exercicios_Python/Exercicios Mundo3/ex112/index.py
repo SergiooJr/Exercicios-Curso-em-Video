@@ -1,4 +1,4 @@
-from utilidadescev import moeda
+from utilidadescev import moeda, dado
 
-p = float(input("Digite o preço: "))
-moeda.resumo(p, 80, 35)
+p = dado.leiaDinheiro("Digite o preço: ")
+moeda.resumo(p, 35, 22)
