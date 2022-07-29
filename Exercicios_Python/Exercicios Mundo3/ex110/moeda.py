@@ -30,4 +30,4 @@ def resumo(n=0, amt=0, dmn=0):
     print(f"A metade do preço: {metade(n, True)}.")
     print(f"O dobro do preço: {dobro(n, True)}.")
     print(f"Aumentando {amt}% temos: {aumentar(n, amt, True)}.")
-    print(f"Diminuindo {dmn}% temos: {diminuir(n, amt, True)}.")
+    print(f"Diminuindo {dmn}% temos: {diminuir(n, dmn, True)}.")
