@@ -15,7 +15,7 @@ def verPessoasCad():
     try:
         with open(r"C:\Users\jessi\OneDrive\Documentos\GitHub\Exercic-os-Curso-em-V-deo\Exercicios_Python\Exercicios Mundo3\ex115\pessoasCad.txt", "r") as arquivo:
             for valores in arquivo:
-                print(valores)
+                print(f"{valores}".replace("\n", ""))
         sleep(2)
     except FileNotFoundError:
         print("O arquivo está vázio, adicione uma pessoa!")
