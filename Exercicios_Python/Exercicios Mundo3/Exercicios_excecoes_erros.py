@@ -24,7 +24,7 @@ os.system("cls")
 #         try:
 #             num = float(input(v))
 #         except (TypeError, ValueError):
-#             print("\033[31mERRO! Por favor digite um número inteiro válido.\033[m")
+#             print("\033[31mERRO! Por favor digite um número real válido.\033[m")
 #             continue
 #         except KeyboardInterrupt:
 #             print("Entrada de dados interrompida pelo usuário!")
@@ -36,3 +36,12 @@ os.system("cls")
 # print(f"O valor inteiro digitado foi {num}, e o real foi {numF}")
 
 # exercicio 114
+import urllib
+import urllib.request
+
+try:
+    site = urllib.request.urlopen(r"http://pudim.com.br/")
+except:
+    print("Deu erro!")
+else:
+    print("Tudo ok")
