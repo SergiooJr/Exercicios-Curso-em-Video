@@ -34,3 +34,5 @@ os.system("cls")
 # num = leiaInt("Digite um valor inteiro: ")
 # numF = leiaFloat("Digite um valor real: ")
 # print(f"O valor inteiro digitado foi {num}, e o real foi {numF}")
+
+# exercicio 114
