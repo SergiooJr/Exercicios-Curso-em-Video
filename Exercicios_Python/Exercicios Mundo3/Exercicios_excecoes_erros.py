@@ -36,12 +36,12 @@ os.system("cls")
 # print(f"O valor inteiro digitado foi {num}, e o real foi {numF}")
 
 # exercicio 114
-import urllib
-import urllib.request
+# import urllib
+# import urllib.request
 
-try:
-    site = urllib.request.urlopen(r"http://pudim.com.br/")
-except:
-    print("Deu erro!")
-else:
-    print("Tudo ok")
+# try:
+#     site = urllib.request.urlopen(r"http://pudim.com.br/")
+# except urllib.error.URLError:
+#     print("\033[31mDeu erro!\033[m")
+# else:
+#     print("\033[36mConsegui acessar o site do pudim com sucesso!\033[m")
