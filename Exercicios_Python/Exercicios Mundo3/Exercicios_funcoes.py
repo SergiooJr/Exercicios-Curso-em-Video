@@ -1,5 +1,4 @@
 #                                                       FUNÇÕES
-from enum import Flag
 import os
 import time
 import datetime
